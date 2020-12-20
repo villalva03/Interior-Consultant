@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Interior-Consultant/static/css/main.b60d1b1c.chunk.css",
+    "main.js": "/Interior-Consultant/static/js/main.3ccbdff0.chunk.js",
+    "main.js.map": "/Interior-Consultant/static/js/main.3ccbdff0.chunk.js.map",
+    "runtime-main.js": "/Interior-Consultant/static/js/runtime-main.28132903.js",
+    "runtime-main.js.map": "/Interior-Consultant/static/js/runtime-main.28132903.js.map",
+    "static/js/2.6f963a0c.chunk.js": "/Interior-Consultant/static/js/2.6f963a0c.chunk.js",
+    "static/js/2.6f963a0c.chunk.js.map": "/Interior-Consultant/static/js/2.6f963a0c.chunk.js.map",
+    "static/js/3.467aa5b0.chunk.js": "/Interior-Consultant/static/js/3.467aa5b0.chunk.js",
+    "static/js/3.467aa5b0.chunk.js.map": "/Interior-Consultant/static/js/3.467aa5b0.chunk.js.map",
+    "index.html": "/Interior-Consultant/index.html",
+    "static/css/main.b60d1b1c.chunk.css.map": "/Interior-Consultant/static/css/main.b60d1b1c.chunk.css.map",
+    "static/js/2.6f963a0c.chunk.js.LICENSE.txt": "/Interior-Consultant/static/js/2.6f963a0c.chunk.js.LICENSE.txt",
+    "static/media/photo1.adfbc15e.png": "/Interior-Consultant/static/media/photo1.adfbc15e.png",
+    "static/media/photo2.eada07e9.png": "/Interior-Consultant/static/media/photo2.eada07e9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.28132903.js",
+    "static/js/2.6f963a0c.chunk.js",
+    "static/css/main.b60d1b1c.chunk.css",
+    "static/js/main.3ccbdff0.chunk.js"
+  ]
+}

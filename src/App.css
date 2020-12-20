@@ -1,38 +1,404 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Contenedor Grid */
+.app {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #000000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+nav {
+  grid-column: 1/5;
+}
+
+.footer {
+  grid-column: 1/5;
+  height: 50px;
+}
+
+.footerMail {
+  position: absolute;
+  height: 17px;
+  left: 790px;
+  top: 990px;
+  font-family: 'Montserrat', sans-serif;
+} 
+
+.modernInterior {
+  position: absolute;
+  height: 61px;
+  left: 77px;
+  top: 190px;
+  font-family: 'Lora', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 68px;
+  line-height: 61px;
+}
+
+.fullService {
+  position: absolute;
+  width: 470px;
+  height: 145px;
+  left: 77px;
+  top: 290px;
+  font-family: 'Montserrat', serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.readMore {
+  position: absolute;
+  width: 102px;
+  height: 22px;
+  left: 77px;
+  top: 490px;
+  font-family: 'Montserrat', serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.arrow{
+  position: absolute;
+  left: 180px;
+  top: 490px;
+  bottom: 36.29%;
+  font-size: 30px;
+}
+
+.info {
+  grid-column: 1/3;
+  width: 100%;
+  height: 890px;
+  top:80px;
+}
+
+.maskGroup {
+  grid-column: 3/5;
+  width: 100%;
+  height: 890px;
+  top: 120px;
+}
+
+.photo1{
+  position: relative;
+  width: 92%;
+  height: 655px;
+  top: 70px;
+}
+
+.rectangle78 {
+  position: relative;
+  width: 52%;
+  height: 210px;
+  right: 100px;
+  float: right;
+  top: -40px;
+  background: #181719;
+  box-shadow: 0 4px 4px -1px #17202A;
+}
+
+.rectangle80 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 40px;
+  top: 20px;
+  background: #C4C4C4;
+  border-radius: 37px;
+}
+
+.photo2 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 37px;
+}
+
+.userName {
+  position: absolute;
+  width: 150px;
+  height: 17px;
+  left: 130px;
+  top: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 17px;
+}
+
+.interiorDesigner {
+  position: absolute;
+  width: 110px;
+  height: 62px;
+  left: 130px;
+  top: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 15px;
+  color: #828282;
+}
+
+.userDetail{
+  position: absolute;
+  width: 287px;
+  height: 62px;
+  left: 40px;
+  top: 110px;
+  font-family: Lora;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 31px;
+}
+
+@media (max-width: 1195px){
+  .info {
+    grid-column: 1/3;
+    width: 100%;
+    height: 810px;
+  }
+  
+  .maskGroup {
+    grid-column: 3/5;
+    width: 100%;
+    height: 810px;
+  }
+
+  .modernInterior {
+    position: absolute;
+    left: 17px;
+    font-size: 60px;
+  }
+  
+  .fullService {
+    position: absolute;
+    left: 17px;
+    font-size: 28px;
+  }
+  
+  .readMore {
+    position: absolute;
+    left: 17px;
+    top: 490px;
+  }
+  
+  .arrow{
+    position: absolute;
+    left: 140px;
+    top: 490px;
+  }
+  
+  .photo1{
+    height: 480px;
+    width: 98%;
+  }
+
+  .rectangle78 {
+    width: 70%;
+    height: 200px;
+  }
+  
+  .rectangle80 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 30px;
+  }
+  
+  .photo2 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+  }
+
+  .userName {
+    position: absolute;
+    left: 115px;
+  }
+  
+  .interiorDesigner {
+    position: absolute;
+    left: 115px;
+  }
+  
+  .userDetail{
+    position: absolute;
+    left: 30px;
+    top: 100px;
+    font-size: 28px;
+  }
+
+  .footerMail {
+    left: 460px;
+    top: 910px;
+  }
+} 
+
+@media screen and (max-width: 992px) {
+  .info {
+    grid-column: 1/5;
+    width: 100%;
+    height: 450px;
+  }
+  
+  .maskGroup {
+    grid-column: 1/5;
+    width: 100%;
+    height: 800px;
+  }
+
+  .modernInterior {
+    position: absolute;
+    left: 17px;
+    font-size: 68px;
+  }
+  
+  .fullService {
+    position: absolute;
+    width: 600px;
+    left: 17px;
+    font-size: 32px;
+  }
+  
+  .readMore {
+    position: absolute;
+    left: 17px;
+    top: 450px;
+  }
+  
+  .arrow{
+    position: absolute;
+    left: 140px;
+    top: 450px;
+  }
+  
+  .photo1{
+    height: 600px;
+    width: 94%;
+    left: 30px;
+  }
+
+  .rectangle78 {
+    width: 50%;
+    height: 200px;
+  }
+
+  .footerMail {
+    left: 350px;
+    top: 1350px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 688px) {
+  .info {
+    grid-column: 1/5;
+    width: 100%;
+    height: 450px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .maskGroup {
+    grid-column: 1/5;
+    width: 100%;
+    height: 800px;
+  }
+
+  .arrow{
+    position: absolute;
+    left: 140px;
+    top: 450px;
+  }
+  
+  .photo1{
+    height: 500px;
+    width: 98%;
+    left: 6px;
+  }
+
+  .rectangle78 {
+    width: 70%;
+    height: 200px;
+  }
+
+  .footerMail {
+    left: 180px;
+  }
+}
+
+@media screen and (max-width: 588px) {
+  .info {
+    grid-column: 1/5;
+    width: 100%;
+    height: 500px;
+  }
+  
+  .maskGroup {
+    grid-column: 1/5;
+    width: 100%;
+    height: 700px;
+  }
+
+  .modernInterior {
+    position: absolute;
+    width: 350px;
+    left: 17px;
+    font-size: 40px;
+  }
+  
+  .fullService {
+    position: absolute;
+    width: 300px;
+    left: 17px;
+    font-size: 20px;
+  }
+  
+  .readMore {
+    position: absolute;
+    width: 150px;
+    left: 17px;
+    top: 510px;
+  }
+  
+  .arrow{
+    left: 140px;
+    top: 508px;
+  }
+  
+  .photo1{
+    height: 380px;
+    width: 97%;
+    left: 6px;
+  }
+
+  .rectangle78 {
+    width: 67%;
+    height: 180px;
+    right: 30px;
+    top: 10px;
+  }
+
+  .userDetail{
+    position: absolute;
+    width: 270px;
+    font-size: 25px;
+  }
+
+  .footerMail {
+    left: 70px;
+    top: 1300px;
   }
 }
